@@ -31,7 +31,10 @@ public class AreaServiceImpl implements AreaService {
 	}
 
 	@Override
-	public void save(Area area) {
+	public void save(Area area) throws Exception {
+		if (area.getNome() == null) {
+			throw new Exception("Nome precisa ser passado");
+		}
 		areaRepository.save(area);
 	}
 

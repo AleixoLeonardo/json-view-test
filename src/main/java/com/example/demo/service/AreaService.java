@@ -9,5 +9,5 @@ public interface AreaService {
 
 	public List<Area> findAll();
 
-	public void save(Area area);
+	public void save(Area area) throws Exception;
 }

@@ -15,7 +15,6 @@ import org.springframework.web.server.ResponseStatusException;
 import com.example.demo.model.Area;
 import com.example.demo.service.AreaService;
 import com.example.demo.view.AreaView;
-import com.example.demo.view.UsuarioView;
 import com.fasterxml.jackson.annotation.JsonView;
 
 @RestController
